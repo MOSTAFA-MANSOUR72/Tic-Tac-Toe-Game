@@ -1,7 +1,7 @@
 # Tic-Tac-Toe-Game
 A GUI Tic Tac Toe Game to play with frient or mainly with robot written in Java FX.
 
-#Features:
+# Features:
 - game can be played by two users offline ( by choosing ***play with friend*** )
 - game can be interactive by choosing ***play with Robot*** which needed using some algorithms to give the needed move to the robot to play  with user
 - algorithms needed
