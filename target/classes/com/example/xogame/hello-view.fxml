@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="613.0" prefWidth="498.0" spacing="20.0" style="-fx-background-color: #fefffe;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.xogame.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="130.0" prefWidth="458.0" style="-fx-background-color: #43766C;">
+      <children>
+         <Text fill="#fefbf6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="               Tic Tac Toe" textAlignment="JUSTIFY" wrappingWidth="409.13671875">
+            <font>
+               <Font name="Copperplate Gothic Bold" size="35.0" />
+            </font>
+            <HBox.margin>
+               <Insets top="5.0" />
+            </HBox.margin>
+         </Text>
+      </children></HBox>
+   <VBox prefHeight="460.0" prefWidth="458.0" style="-fx-background-color: #43766C;">
+      <children>
+         <Line endX="-141.72018432617188" endY="-0.7071067690849304" layoutX="111.0" layoutY="446.0" startX="-88.42729187011719" startY="-3.1338932514190674" stroke="#43766c" style="-fx-fill: #43766C;" />
+         <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #255555;">
+            <children>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="262.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+               <Button mnemonicParsing="false" prefHeight="199.0" prefWidth="154.0" style="-fx-background-color: #FEFBF6;" text="X" textFill="#009688">
+                  <font>
+                     <Font name="Snap ITC" size="65.0" />
+                  </font></Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" startX="-100.0" stroke="#43766c" />
+               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="151.0" style="-fx-background-color: #FEFBF6;" />
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="264.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+               <Button layoutX="115.0" layoutY="10.0" mnemonicParsing="false" prefHeight="187.0" prefWidth="155.0" style="-fx-background-color: #FEFBF6;" text="O" textFill="#2c3e50">
+                  <padding>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </padding>
+                  <font>
+                     <Font name="Snap ITC" size="65.0" />
+                  </font>
+               </Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="263.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+            </children>
+         </HBox>
+         <Line endX="-98.90785217285156" endY="-2.7193329334259033" startX="-100.0" stroke="#43766c" />
+         <HBox layoutX="10.0" layoutY="15.0" prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #255555;">
+            <children>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="262.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+               <Button mnemonicParsing="false" prefHeight="199.0" prefWidth="154.0" style="-fx-background-color: #FEFBF6;" text="O" textFill="#2c3e50">
+                  <font>
+                     <Font name="Snap ITC" size="65.0" />
+                  </font>
+               </Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" startX="-100.0" stroke="#43766c" />
+               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="151.0" style="-fx-background-color: #FEFBF6;" text="X" textFill="#009688">
+                  <font>
+                     <Font name="Snap ITC" size="65.0" />
+                  </font>
+               </Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="264.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+               <Button layoutX="115.0" layoutY="10.0" mnemonicParsing="false" prefHeight="187.0" prefWidth="155.0" style="-fx-background-color: #FEFBF6;" text="X" textFill="#009688">
+                  <padding>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </padding>
+                  <font>
+                     <Font name="Snap ITC" size="65.0" />
+                  </font>
+               </Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="263.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+            </children>
+         </HBox>
+         <Line endX="-98.90785217285156" endY="-2.7193329334259033" layoutX="111.0" layoutY="154.0" startX="-100.0" stroke="#43766c" />
+         <HBox layoutX="10.0" layoutY="15.0" prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #255555;">
+            <children>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="262.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+               <Button mnemonicParsing="false" prefHeight="199.0" prefWidth="154.0" style="-fx-background-color: #FEFBF6;" text=" " textFill="#18bc9c">
+                  <font>
+                     <Font name="Old English Text MT" size="66.0" />
+                  </font>
+               </Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" startX="-100.0" stroke="#43766c" />
+               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="151.0" style="-fx-background-color: #FEFBF6;" />
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="264.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+               <Button layoutX="115.0" layoutY="10.0" mnemonicParsing="false" prefHeight="187.0" prefWidth="155.0" style="-fx-background-color: #FEFBF6;" text="O" textFill="#2c3e50">
+                  <padding>
+                     <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  </padding>
+                  <font>
+                     <Font name="Snap ITC" size="65.0" />
+                  </font>
+               </Button>
+               <Line endX="-101.0921630859375" endY="139.2928924560547" layoutX="263.0" layoutY="11.0" startX="-100.0" stroke="#43766c" />
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</VBox>
