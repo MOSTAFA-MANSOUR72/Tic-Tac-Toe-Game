@@ -145,26 +145,32 @@ public class PlayWithRobot {
     static class Move{
         int row, col;
     }
+    private int mxScore=0,mnScore=0,drScore=0;
 
     ////////// minimax algorithm
 
-    static int minimax(char[][] board, int depth, Boolean isMax)
+     int minimax(char[][] board, int depth, Boolean isMax)
     {
         int score = checkForWinner(board);
 
         // If Maximizer has won the game
         // return his/her evaluated score
-        if (score == 1)
+        if (score == -1) {
+            mxScore++;
             return score;
+        }
 
         // If Minimizer has won the game
         // return his/her evaluated score
-        if (score == -1)
+        if (score == 1) {
+            mnScore++;
             return score;
+        }
 
         // If there are no more moves and
         // no winner then it is a tie
         if (isMovesLeft(board) == false) {
+            drScore++;
             return 0;
         }
 
@@ -229,9 +235,9 @@ public class PlayWithRobot {
 
     // This will return the best possible
 // move for the player
-    static Move findBestMove(char board[][])
+     Move findBestMove(char board[][])
     {
-        int bestVal = -1000;
+        int minloses = 1000,mxwons=-1000,ties=-1000;
         Move bestMove = new Move();
         bestMove.row = -1;
         bestMove.col = -1;
@@ -247,23 +253,34 @@ public class PlayWithRobot {
                 if (board[i][j]!='x' && board[i][j]!='o')
                 {
                     // Make the move
-                    board[i][j] = 'x';
-
+                    board[i][j] = 'o';
+                    mxScore=0;
+                    mnScore=0;
+                    drScore=0;
                     // compute evaluation function for this
                     // move.
-                    int moveVal = minimax(board, 0, false);
+                   minimax(board, 0, false);
 
                     // Undo the move
                     board[i][j] = '-';
 
-                    // If the value of the current move is
-                    // more than the best value, then update
-                    // best/
-                    if (moveVal > bestVal)
+                    // compare our situation with the new values
+                    if (mnScore < minloses)
                     {
                         bestMove.row = i;
                         bestMove.col = j;
-                        bestVal = moveVal;
+                       minloses=mnScore;
+                    }
+                    else if(mnScore==minloses){
+                        if(drScore>ties){
+                            ties=drScore;
+                            bestMove.row = i;
+                            bestMove.col = j;
+                        } else if(mxwons<mxScore){
+                            mxwons=mxScore;
+                            bestMove.row = i;
+                            bestMove.col = j;
+                        }
                     }
                 }
             }
