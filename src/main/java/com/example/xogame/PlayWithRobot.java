@@ -241,7 +241,6 @@ public class PlayWithRobot {
         Move bestMove = new Move();
         bestMove.row = -1;
         bestMove.col = -1;
-
         // Traverse all cells, evaluate minimax function
         // for all empty cells. And return the cell
         // with optimal value.
@@ -253,6 +252,14 @@ public class PlayWithRobot {
                 if (board[i][j]!='x' && board[i][j]!='o')
                 {
                     // Make the move
+                    board[i][j]='x';
+                    if(checkForWinner(board)==1){
+                        board[i][j]='-';
+                        bestMove.row=i;
+                        bestMove.col=j;
+                        i=j=3;
+                        break;
+                    }
                     board[i][j] = 'o';
                     mxScore=0;
                     mnScore=0;
@@ -264,7 +271,7 @@ public class PlayWithRobot {
                     // Undo the move
                     board[i][j] = '-';
 
-                    // compare our situation with the new values
+
                     if (mnScore < minloses)
                     {
                         bestMove.row = i;
@@ -276,7 +283,7 @@ public class PlayWithRobot {
                             ties=drScore;
                             bestMove.row = i;
                             bestMove.col = j;
-                        } else if(mxwons<mxScore){
+                        } else if(mxwons>mxScore){
                             mxwons=mxScore;
                             bestMove.row = i;
                             bestMove.col = j;
@@ -544,7 +551,9 @@ public class PlayWithRobot {
             endOfGame(0);
             return;
         }
-        Move move=findBestMove(b);
+        Move move=new Move();
+        move.row=0;
+        move.col=0;
         doRobotMove(move);
         if (checkForWinner()==-1){
             Thread.sleep(400);
