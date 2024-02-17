@@ -21,7 +21,7 @@ user can play with himself or with friend on the same device
 ## choosing to play with Robot:
 once the user play his turn the minimax algortihm is called to give the needed move to played by robot.
 
-![image](https://github.com/MOSTAFA-MANSOUR72/Tic-Tac-Toe-Game/assets/149438807/55943288-1ab0-43da-997e-6b1b69e812c4)
+![image](https://github.com/MOSTAFA-MANSOUR72/Tic-Tac-Toe-Game/assets/149438807/5dbc74a3-89cb-4652-8a0c-a5feb97c7d09)
 
 # Tools and Technologies
 ### programming language : java FX
