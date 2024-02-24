@@ -13,13 +13,13 @@ A GUI Tic Tac Toe Game to play with friend or mainly with robot written in Java 
 
 ![image](https://github.com/MOSTAFA-MANSOUR72/Tic-Tac-Toe-Game/assets/149438807/3b83028f-0d9c-42d9-b293-daa622ddbbcc)
 
-## choosing to play with friend:
+## Choosing to play with friend:
 user can play with himself or with friend on the same device
 
 ![image](https://github.com/MOSTAFA-MANSOUR72/Tic-Tac-Toe-Game/assets/149438807/3a75f064-805b-4666-8b2a-a8155c737814)
 
-## choosing to play with Robot:
-once the user play his turn the minimax algortihm is called to give the needed move to played by robot.
+## Choosing to play with Robot:
+once the user play his turn the minimax algortihm is called to give the needed move to be played by robot.
 
 ![image](https://github.com/MOSTAFA-MANSOUR72/Tic-Tac-Toe-Game/assets/149438807/5dbc74a3-89cb-4652-8a0c-a5feb97c7d09)
 
